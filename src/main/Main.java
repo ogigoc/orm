@@ -1,13 +1,14 @@
 package main;
 
+import entities.Student;
 import entities.TestEntity;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("start\n");
+        Student s1 = new Student("Pera", "43");
+        Student s2 = new Student("Mika", "52");
 
-        TestEntity t = new TestEntity();
-        t.test();
 
+        System.out.println(DBManager.getAll(Student.class));
     }
 }

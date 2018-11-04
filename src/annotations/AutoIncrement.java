@@ -6,7 +6,6 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface Table {
-    String name();
+@Target(ElementType.FIELD)
+public @interface AutoIncrement {
 }
