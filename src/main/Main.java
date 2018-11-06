@@ -9,6 +9,6 @@ public class Main {
         Student s2 = new Student("Mika", "52");
 
 
-        System.out.println(DBManager.getAll(Student.class));
+        System.out.println(EntityUtils.getAll(Student.class));
     }
 }
