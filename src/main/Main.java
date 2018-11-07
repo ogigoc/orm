@@ -1,14 +1,21 @@
 package main;
 
 import entities.Student;
-import entities.TestEntity;
 
 public class Main {
     public static void main(String[] args) {
         Student s1 = new Student("Pera", "43");
         Student s2 = new Student("Mika", "52");
 
+        EntityManager manager = new EntityManager();
 
-        System.out.println(EntityUtils.getAll(Student.class));
+        try {
+            manager.getAll(Student.class);
+            manager.insert(Student.class, s2);
+            manager.get(Student.class, 0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
