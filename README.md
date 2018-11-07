@@ -1,2 +1,2 @@
 # Object relation mapper
-Start of an ORM implemented to showcase the user of Annotations, Reflection and Aspects.
+Start of an ORM implemented in Java to showcase the user of Annotations, Reflection and Aspects.
